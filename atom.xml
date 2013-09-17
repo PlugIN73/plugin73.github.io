@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Alexander Vagin]]></title>
+  <link href="http://PlugIN73.github.io/atom.xml" rel="self"/>
+  <link href="http://PlugIN73.github.io/"/>
+  <updated>2013-09-17T18:06:03+02:00</updated>
+  <id>http://PlugIN73.github.io/</id>
+  <author>
+    <name><![CDATA[plugin73]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[First post]]></title>
+    <link href="http://PlugIN73.github.io/blog/2013/09/17/first-post/"/>
+    <updated>2013-09-17T15:54:00+02:00</updated>
+    <id>http://PlugIN73.github.io/blog/2013/09/17/first-post</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+</feed>
