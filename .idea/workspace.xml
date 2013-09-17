@@ -5,14 +5,14 @@
     <ignored path="octopress.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/_config.yml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379431536499" ignored="false" />
-    <file path="$PROJECT_DIR$/public/assets/jwplayer/glow/glow.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379441147162" ignored="false" />
-    <file path="$PROJECT_DIR$/public/javascripts/libs/jquery.min.js" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379441147162" ignored="false" />
-    <file path="$PROJECT_DIR$/public/stylesheets/screen.css" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379441147162" ignored="false" />
+    <file path="$PROJECT_DIR$/public/assets/jwplayer/glow/glow.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379441824120" ignored="false" />
+    <file path="$PROJECT_DIR$/public/javascripts/libs/jquery.min.js" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379441824120" ignored="false" />
+    <file path="$PROJECT_DIR$/public/stylesheets/screen.css" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379441824120" ignored="false" />
     <file path="/page.html" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379429573483" ignored="false" />
     <file path="$PROJECT_DIR$/source/_includes/custom/category_feed.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379431365857" ignored="false" />
     <file path="/about_me.html" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379431733586" ignored="false" />
     <file path="/2013-09-17-vstuplieniie.markdown" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379440688925" ignored="false" />
-    <file path="$PROJECT_DIR$/public/blog/categories/top-secret/atom.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379441147162" ignored="false" />
+    <file path="$PROJECT_DIR$/public/blog/categories/top-secret/atom.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379441824120" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +34,7 @@
       <file leaf-file-name="_config.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="24" selection-start="2915" selection-end="2915" vertical-scroll-proportion="0.8108108">
+            <state line="96" column="30" selection-start="2885" selection-end="2885" vertical-scroll-proportion="0.7567568">
               <folding />
             </state>
           </provider>
@@ -448,7 +448,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="24" selection-start="2915" selection-end="2915" vertical-scroll-proportion="0.8108108">
+        <state line="96" column="30" selection-start="2885" selection-end="2885" vertical-scroll-proportion="0.7567568">
           <folding />
         </state>
       </provider>
