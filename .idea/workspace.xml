@@ -11,7 +11,7 @@
     <file path="/page.html" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379429573483" ignored="false" />
     <file path="$PROJECT_DIR$/source/_includes/custom/category_feed.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379431365857" ignored="false" />
     <file path="/about_me.html" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379431733586" ignored="false" />
-    <file path="/2013-09-17-vstuplieniie.markdown" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379440688925" ignored="false" />
+    <file path="/2013-09-17-vstuplieniie.markdown" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379444290787" ignored="false" />
     <file path="$PROJECT_DIR$/public/blog/categories/top-secret/atom.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379442362448" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,10 +31,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_config.yml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_config.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="27" selection-start="2459" selection-end="2459" vertical-scroll-proportion="0.5675676">
+            <state line="72" column="27" selection-start="2459" selection-end="2459" vertical-scroll-proportion="-12.6">
               <folding />
             </state>
           </provider>
@@ -103,10 +103,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2013-09-17-vstuplieniie.markdown" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="2013-09-17-vstuplieniie.markdown" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/_posts/2013-09-17-vstuplieniie.markdown">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="81" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
+            <state line="10" column="54" selection-start="317" selection-end="317" vertical-scroll-proportion="0.2529511">
               <folding />
             </state>
           </provider>
@@ -127,8 +127,8 @@
         <option value="$PROJECT_DIR$/source/_includes/article.html" />
         <option value="$PROJECT_DIR$/source/_includes/asides/about_me.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/source/_posts/2013-09-17-vstuplieniie.markdown" />
         <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/source/_posts/2013-09-17-vstuplieniie.markdown" />
       </list>
     </option>
   </component>
@@ -439,16 +439,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/2013-09-17-vstuplieniie.markdown">
+    <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="81" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
+        <state line="72" column="27" selection-start="2459" selection-end="2459" vertical-scroll-proportion="-12.6">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
+    <entry file="file://$PROJECT_DIR$/source/_posts/2013-09-17-vstuplieniie.markdown">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="27" selection-start="2459" selection-end="2459" vertical-scroll-proportion="0.5675676">
+        <state line="10" column="54" selection-start="317" selection-end="317" vertical-scroll-proportion="0.2529511">
           <folding />
         </state>
       </provider>
