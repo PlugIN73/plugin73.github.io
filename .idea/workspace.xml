@@ -4,10 +4,10 @@
     <list default="true" id="cc31615f-8036-442a-b026-fe4a7a99fcf1" name="Default" comment="" />
     <ignored path="octopress.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/_config.yml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379431536499" ignored="false" />
-    <file path="$PROJECT_DIR$/public/assets/jwplayer/glow/glow.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379442362448" ignored="false" />
-    <file path="$PROJECT_DIR$/public/javascripts/libs/jquery.min.js" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379442362448" ignored="false" />
-    <file path="$PROJECT_DIR$/public/stylesheets/screen.css" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379442362448" ignored="false" />
+    <file path="/_config.yml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379444128224" ignored="false" />
+    <file path="$PROJECT_DIR$/public/assets/jwplayer/glow/glow.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379444118056" ignored="false" />
+    <file path="$PROJECT_DIR$/public/javascripts/libs/jquery.min.js" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379444118057" ignored="false" />
+    <file path="$PROJECT_DIR$/public/stylesheets/screen.css" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379444118056" ignored="false" />
     <file path="/page.html" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379429573483" ignored="false" />
     <file path="$PROJECT_DIR$/source/_includes/custom/category_feed.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379431365857" ignored="false" />
     <file path="/about_me.html" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379431733586" ignored="false" />
@@ -34,7 +34,7 @@
       <file leaf-file-name="_config.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="20" selection-start="2899" selection-end="2899" vertical-scroll-proportion="1.972973">
+            <state line="72" column="27" selection-start="2459" selection-end="2459" vertical-scroll-proportion="0.5675676">
               <folding />
             </state>
           </provider>
@@ -261,13 +261,13 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="712" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16149563" sideWeight="0.6708075" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16149563" sideWeight="0.6708075" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -448,7 +448,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="20" selection-start="2899" selection-end="2899" vertical-scroll-proportion="1.972973">
+        <state line="72" column="27" selection-start="2459" selection-end="2459" vertical-scroll-proportion="0.5675676">
           <folding />
         </state>
       </provider>
