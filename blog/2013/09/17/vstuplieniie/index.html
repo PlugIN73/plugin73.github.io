@@ -103,7 +103,7 @@
 
 <div class="entry-content"><p>Первый мой блог и сразу по хардкору jekyll. :) <br/>
 Пришло время, когда я хочу и могу о чем-то написать. Тяжело пересилить свои страхи, но я это сделаю! <br/>
-Хочу тут освещать интересные моменты из своего опыта, вести заметки по прокачке. You are welcome!</p>
+Хочу тут освещать интересные моменты из своего опыта и вести заметки по прокачке. You are welcome!</p>
 </div>
 
 
@@ -186,6 +186,35 @@
       </li>
     
   </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/PlugIN73">@PlugIN73</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'PlugIN73',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
 </section>
 
 
