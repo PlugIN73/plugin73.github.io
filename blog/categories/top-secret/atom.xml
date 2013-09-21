@@ -4,7 +4,7 @@
   <title><![CDATA[Category: top-secret | Alexander Vagin]]></title>
   <link href="http://PlugIN73.github.io/blog/categories/top-secret/atom.xml" rel="self"/>
   <link href="http://PlugIN73.github.io/"/>
-  <updated>2013-09-17T21:00:39+02:00</updated>
+  <updated>2013-09-21T18:53:47+02:00</updated>
   <id>http://PlugIN73.github.io/</id>
   <author>
     <name><![CDATA[plugin73]]></name>
@@ -18,9 +18,12 @@
     <link href="http://PlugIN73.github.io/blog/2013/09/17/vstuplieniie/"/>
     <updated>2013-09-17T19:29:00+02:00</updated>
     <id>http://PlugIN73.github.io/blog/2013/09/17/vstuplieniie</id>
-    <content type="html"><![CDATA[<p>Первый мой блог и сразу по хардкору jekyll. :) <br/>
-Пришло время, когда я хочу и могу о чем-то написать. Тяжело пересилить свои страхи, но я это сделаю! <br/>
-Хочу тут освещать интересные моменты из своего опыта и вести заметки по прокачке. You are welcome!</p>
+    <content type="html"><![CDATA[<p>Первый мой блог и сразу по хардкору jekyll. :)
+ <!--more--></p>
+
+<p>Пришло время, когда я хочу и могу о чем-то написать. Тяжело пересилить свои страхи, но я это сделаю!</p>
+
+<p>Хочу тут освещать интересные моменты из своего опыта и вести заметки по прокачке. You are welcome!</p>
 ]]></content>
   </entry>
   

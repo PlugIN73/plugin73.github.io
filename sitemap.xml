@@ -2,22 +2,26 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://PlugIN73.github.io/blog/2013/09/17/vstuplieniie/</loc>
-        <lastmod>2013-09-17T20:58:10+02:00</lastmod>
+        <lastmod>2013-09-21T19:00:54+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://PlugIN73.github.io/blog/2013/09/18/timezone-vs-ruby-and-and-rails/</loc>
+        <lastmod>2013-09-21T19:00:54+02:00</lastmod>
     </url>
     <url>
         <loc>http://PlugIN73.github.io/archives/</loc>
-        <lastmod>2013-09-17T20:58:10+02:00</lastmod>
+        <lastmod>2013-09-21T19:00:54+02:00</lastmod>
     </url>
     <url>
         <loc>http://PlugIN73.github.io/blog/archives/</loc>
-        <lastmod>2013-09-17T20:58:10+02:00</lastmod>
+        <lastmod>2013-09-21T19:00:54+02:00</lastmod>
     </url>
     <url>
         <loc>http://PlugIN73.github.io/</loc>
-        <lastmod>2013-09-17T20:58:10+02:00</lastmod>
+        <lastmod>2013-09-21T19:00:54+02:00</lastmod>
     </url>
     <url>
         <loc>http://PlugIN73.github.io/robots.txt</loc>
-        <lastmod>2013-09-17T17:05:09+02:00</lastmod>
+        <lastmod>2013-09-21T18:49:37+02:00</lastmod>
     </url>
 </urlset>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Alexander Vagin]]></title>
-  <link href="http://PlugIN73.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: ruby | Alexander Vagin]]></title>
+  <link href="http://PlugIN73.github.io/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://PlugIN73.github.io/"/>
   <updated>2013-09-21T18:53:47+02:00</updated>
   <id>http://PlugIN73.github.io/</id>
@@ -77,20 +77,6 @@ end
 <p>Что хотелось бы отметить &ndash; рельсовый ActiveRecord умеет работать с временными зонами и использует зону из application.rb. В базу данных, по умолчанию, сохраняется время в UTC, т.е. переводится в +0. Для этого используют метод to_s(:db). В большинстве случаев вызывать его нет необходимости, так как rails сами его вызовут.</p>
 
 <p>Исходя из того, что рельсы сохраняют время в UTC, то и из базы они хотят получить время в UTC. А это значит, что хранить таймзону в бд нам не нужно.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Вступление]]></title>
-    <link href="http://PlugIN73.github.io/blog/2013/09/17/vstuplieniie/"/>
-    <updated>2013-09-17T19:29:00+02:00</updated>
-    <id>http://PlugIN73.github.io/blog/2013/09/17/vstuplieniie</id>
-    <content type="html"><![CDATA[<p>Первый мой блог и сразу по хардкору jekyll. :)
- <!--more--></p>
-
-<p>Пришло время, когда я хочу и могу о чем-то написать. Тяжело пересилить свои страхи, но я это сделаю!</p>
-
-<p>Хочу тут освещать интересные моменты из своего опыта и вести заметки по прокачке. You are welcome!</p>
 ]]></content>
   </entry>
   
