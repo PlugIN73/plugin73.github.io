@@ -4,7 +4,7 @@
   <title><![CDATA[Alexander Vagin]]></title>
   <link href="http://PlugIN73.github.io/atom.xml" rel="self"/>
   <link href="http://PlugIN73.github.io/"/>
-  <updated>2013-09-21T18:53:47+02:00</updated>
+  <updated>2013-09-22T12:04:33+02:00</updated>
   <id>http://PlugIN73.github.io/</id>
   <author>
     <name><![CDATA[plugin73]]></name>
@@ -19,8 +19,9 @@
     <updated>2013-09-18T07:01:00+02:00</updated>
     <id>http://PlugIN73.github.io/blog/2013/09/18/timezone-vs-ruby-and-and-rails</id>
     <content type="html"><![CDATA[<p>Подводные камни и true way :)
- <!--more-->
-При использовании класса <a href="http://ruby-doc.org/core-2.0.0/Time.html" title="Time в ruby 2.0">Time</a> в ruby используется серверное время, как точка отсчета времени.</p>
+ <!--more--></p>
+
+<p>При использовании класса <a href="http://ruby-doc.org/core-2.0.0/Time.html" title="Time в ruby 2.0">Time</a> в ruby используется серверное время, как точка отсчета времени.</p>
 
 <pre><code>$ date
 Sat Sep 21 16:49:56 CEST 2013
