@@ -8,6 +8,7 @@ categories: ruby rails ruby_on_rails time timezone
 
 Подводные камни и true way :)
  <!--more-->
+
 При использовании класса [Time](http://ruby-doc.org/core-2.0.0/Time.html "Time в ruby 2.0") в ruby используется серверное время, как точка отсчета времени.
 
     $ date
