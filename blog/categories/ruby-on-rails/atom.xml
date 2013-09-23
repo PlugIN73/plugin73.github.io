@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby_on_rails | Alexander Vagin]]></title>
   <link href="http://PlugIN73.github.io/blog/categories/ruby-on-rails/atom.xml" rel="self"/>
   <link href="http://PlugIN73.github.io/"/>
-  <updated>2013-09-23T07:51:08+02:00</updated>
+  <updated>2013-09-23T19:13:55+02:00</updated>
   <id>http://PlugIN73.github.io/</id>
   <author>
     <name><![CDATA[plugin73]]></name>
@@ -78,6 +78,12 @@ end
 <p>Что хотелось бы отметить &ndash; рельсовый ActiveRecord умеет работать с временными зонами и использует зону из application.rb. В базу данных, по умолчанию, сохраняется время в UTC, т.е. переводится в +0. Для этого используют метод to_s(:db). В большинстве случаев вызывать его нет необходимости, так как rails сами его вызовут.</p>
 
 <p>Исходя из того, что рельсы сохраняют время в UTC, то и из базы они хотят получить время в UTC. А это значит, что хранить таймзону в бд нам не нужно.</p>
+
+<p><strong>UPD 1</strong>:<br>
+ В качестве альтернативы к Time.zone.now можно использовать <a href="https://github.com/rails/rails/blob/master/activesupport/lib/active_support/core_ext/time/calculations.rb#L28">Time.current</a>.
+Его результат &ndash; вызов Time.zone.now, но только при установленной таймзоне в конфигурационном файле (или напрямую через Time.zone), иначе
+ возвращает Time.now. На мой взгляд, поведение этого метода в некоторой степени неявно &ndash; необходимо понимать, какой результат будет в
+ конкретном случае использования.</p>
 ]]></content>
   </entry>
   
