@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby_on_rails | Alexander Vagin]]></title>
   <link href="http://PlugIN73.github.io/blog/categories/ruby-on-rails/atom.xml" rel="self"/>
   <link href="http://PlugIN73.github.io/"/>
-  <updated>2013-09-22T12:04:33+02:00</updated>
+  <updated>2013-09-23T07:51:08+02:00</updated>
   <id>http://PlugIN73.github.io/</id>
   <author>
     <name><![CDATA[plugin73]]></name>
@@ -36,9 +36,9 @@ $ irb
 
 <pre><code>time = Time.new(2013, 09, 21, 16, 49, 59)
 
-puts "#{time} - #{plain.name} now #{message}"
+puts "#{time} - #{plane.name} now #{message}"
 
-2.0.0-p247 :001 &gt; plain_message (plain, "landed")
+2.0.0-p247 :001 &gt; plane_message (plane, "landed")
 =&gt; 2013-09-21 16:49:59 +0100 - Airbus 22 now landed
 </code></pre>
 
