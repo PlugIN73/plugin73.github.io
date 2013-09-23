@@ -5,22 +5,22 @@
     <ignored path="octopress.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/_config.yml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379782378700" ignored="false" />
-    <file path="$PROJECT_DIR$/public/assets/jwplayer/glow/glow.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379782840234" ignored="false" />
+    <file path="$PROJECT_DIR$/public/assets/jwplayer/glow/glow.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379957115239" ignored="false" />
     <file path="$PROJECT_DIR$/public/javascripts/libs/jquery.min.js" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379480550722" ignored="false" />
     <file path="$PROJECT_DIR$/public/stylesheets/screen.css" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379480550722" ignored="false" />
     <file path="/page.html" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379429573483" ignored="false" />
     <file path="$PROJECT_DIR$/source/_includes/custom/category_feed.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379844198991" ignored="false" />
     <file path="/about_me.html" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379431733586" ignored="false" />
     <file path="/2013-09-17-vstuplieniie.markdown" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379444290787" ignored="false" />
-    <file path="$PROJECT_DIR$/public/blog/categories/top-secret/atom.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379915353997" ignored="false" />
-    <file path="/2013-09-18-timezone-vs-ruby-and-and-rails.markdown" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379782795231" ignored="false" />
-    <file path="$PROJECT_DIR$/public/blog/categories/rails/atom.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379915353997" ignored="false" />
-    <file path="$PROJECT_DIR$/public/blog/categories/ruby/atom.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379915353997" ignored="false" />
-    <file path="$PROJECT_DIR$/public/blog/categories/time/atom.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379915353997" ignored="false" />
-    <file path="$PROJECT_DIR$/public/atom.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379782840234" ignored="false" />
-    <file path="$PROJECT_DIR$/public/sitemap.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379915353997" ignored="false" />
-    <file path="$PROJECT_DIR$/public/blog/categories/ruby-on-rails/atom.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379782840234" ignored="false" />
-    <file path="$PROJECT_DIR$/public/blog/categories/timezone/atom.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379782840234" ignored="false" />
+    <file path="$PROJECT_DIR$/public/blog/categories/top-secret/atom.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379957174404" ignored="false" />
+    <file path="/2013-09-18-timezone-vs-ruby-and-and-rails.markdown" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379957126271" ignored="false" />
+    <file path="$PROJECT_DIR$/public/blog/categories/rails/atom.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379957115239" ignored="false" />
+    <file path="$PROJECT_DIR$/public/blog/categories/ruby/atom.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379957115239" ignored="false" />
+    <file path="$PROJECT_DIR$/public/blog/categories/time/atom.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379957115239" ignored="false" />
+    <file path="$PROJECT_DIR$/public/atom.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379957115239" ignored="false" />
+    <file path="$PROJECT_DIR$/public/sitemap.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379957115239" ignored="false" />
+    <file path="$PROJECT_DIR$/public/blog/categories/ruby-on-rails/atom.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379957115239" ignored="false" />
+    <file path="$PROJECT_DIR$/public/blog/categories/timezone/atom.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379957115239" ignored="false" />
     <file path="$PROJECT_DIR$/source/assets/jwplayer/glow/glow.xml" changelist="cc31615f-8036-442a-b026-fe4a7a99fcf1" time="1379844198991" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +43,7 @@
       <file leaf-file-name="2013-09-18-timezone-vs-ruby-and-and-rails.markdown" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/_posts/2013-09-18-timezone-vs-ruby-and-and-rails.markdown">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="41" selection-start="1357" selection-end="1357" vertical-scroll-proportion="0.74626863">
+            <state line="65" column="118" selection-start="3266" selection-end="3266" vertical-scroll-proportion="0.82587063">
               <folding />
             </state>
           </provider>
@@ -81,7 +81,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1280" />
+    <option name="width" value="1600" />
     <option name="height" value="712" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -221,14 +221,13 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="712" extended-state="6" />
+    <frame x="0" y="22" width="1600" height="712" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16149563" sideWeight="0.6708075" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12872542" sideWeight="0.7764423" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -238,6 +237,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -341,49 +341,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="16" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.25862068">
-          <folding />
-        </state>
+        <state line="37" column="16" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.25862068" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_includes/asides/nav.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="29" selection-start="490" selection-end="501" vertical-scroll-proportion="0.23725834">
-          <folding />
-        </state>
+        <state line="9" column="29" selection-start="490" selection-end="501" vertical-scroll-proportion="0.23725834" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_includes/asides/about_me.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="10" selection-end="10" vertical-scroll-proportion="0.02636204">
-          <folding />
-        </state>
+        <state line="1" column="0" selection-start="10" selection-end="10" vertical-scroll-proportion="0.02636204" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="21" selection-start="187" selection-end="187" vertical-scroll-proportion="0.23725834">
-          <folding />
-        </state>
+        <state line="9" column="21" selection-start="187" selection-end="187" vertical-scroll-proportion="0.23725834" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_includes/article.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="33" selection-start="911" selection-end="911" vertical-scroll-proportion="0.49222797">
-          <folding />
-        </state>
+        <state line="19" column="33" selection-start="911" selection-end="911" vertical-scroll-proportion="0.49222797" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.themes/classic/source/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="16" selection-start="305" selection-end="305" vertical-scroll-proportion="0.35472974">
-          <folding />
-        </state>
+        <state line="14" column="16" selection-start="305" selection-end="305" vertical-scroll-proportion="0.35472974" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/2013-09-18-timezone-vs-ruby-and-and-rails.markdown">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="118" selection-start="3266" selection-end="3266" vertical-scroll-proportion="0.82587063">
           <folding />
         </state>
       </provider>
@@ -391,13 +384,6 @@
     <entry file="file://$PROJECT_DIR$/source/_posts/2013-09-17-vstuplieniie.markdown">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="1" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/2013-09-18-timezone-vs-ruby-and-and-rails.markdown">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="41" selection-start="1357" selection-end="1357" vertical-scroll-proportion="0.74626863">
           <folding />
         </state>
       </provider>
