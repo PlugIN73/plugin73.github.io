@@ -23,9 +23,9 @@ categories: ruby rails ruby_on_rails time timezone
 
     time = Time.new(2013, 09, 21, 16, 49, 59)
 
-    puts "#{time} - #{plain.name} now #{message}"
+    puts "#{time} - #{plane.name} now #{message}"
 
-    2.0.0-p247 :001 > plain_message (plain, "landed")
+    2.0.0-p247 :001 > plane_message (plane, "landed")
     => 2013-09-21 16:49:59 +0100 - Airbus 22 now landed
 
 С этой программой все хорошо, пока мы исполняем ее у себя на сервере. Стоит нам ее вылить, например, на продакшен, который находится в другом часовом поясе или случайно не правильно настроен, как мы получим странный баг - время будет отличным от ожидаемого. И все потому, что ruby взяло за точку отсчета таймзону сервера.
