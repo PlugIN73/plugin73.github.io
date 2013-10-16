@@ -4,7 +4,7 @@
   <title><![CDATA[Alexander Vagin]]></title>
   <link href="http://PlugIN73.github.io/atom.xml" rel="self"/>
   <link href="http://PlugIN73.github.io/"/>
-  <updated>2013-10-16T19:57:16+02:00</updated>
+  <updated>2013-10-16T20:02:01+02:00</updated>
   <id>http://PlugIN73.github.io/</id>
   <author>
     <name><![CDATA[plugin73]]></name>
@@ -12,15 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Отзыв о Calendar Driven Development]]></title>
-    <link href="http://PlugIN73.github.io/blog/2013/10/16/otzyv-o-calendar-driven-development/"/>
-    <updated>2013-10-16T19:43:00+02:00</updated>
-    <id>http://PlugIN73.github.io/blog/2013/10/16/otzyv-o-calendar-driven-development</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Timezone vs Ruby &amp;&amp; Rails]]></title>
