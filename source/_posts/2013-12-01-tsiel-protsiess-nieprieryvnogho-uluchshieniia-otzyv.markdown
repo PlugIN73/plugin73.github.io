@@ -3,7 +3,7 @@ layout: post
 title: "Цель. Процесс непрерывного улучшения [отзыв]"
 date: 2013-12-01 11:18
 comments: true
-categories: books, must-read
+categories: books must-read
 ---
 Увлекательнейший бизнес-роман, познакомивший Америку с теорией
 ограничений.
