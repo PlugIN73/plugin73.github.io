@@ -4,7 +4,7 @@
   <title><![CDATA[Alexander Vagin]]></title>
   <link href="http://PlugIN73.github.io/atom.xml" rel="self"/>
   <link href="http://PlugIN73.github.io/"/>
-  <updated>2013-12-02T21:22:30+01:00</updated>
+  <updated>2013-12-02T21:24:55+01:00</updated>
   <id>http://PlugIN73.github.io/</id>
   <author>
     <name><![CDATA[plugin73]]></name>
@@ -45,6 +45,9 @@
     <updated>2013-10-16T19:43:00+02:00</updated>
     <id>http://PlugIN73.github.io/blog/2013/10/16/otzyv-o-calendar-driven-development</id>
     <content type="html"><![CDATA[<p>По мотивам <a href="http://habrahabr.ru/post/195942/">статьи на хабре</a></p>
+
+<!--more-->
+
 
 <p><strong><em>5 дней</em></strong>
 Офигеть! Круто!</p>
