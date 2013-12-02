@@ -4,7 +4,7 @@
   <title><![CDATA[Alexander Vagin]]></title>
   <link href="http://PlugIN73.github.io/atom.xml" rel="self"/>
   <link href="http://PlugIN73.github.io/"/>
-  <updated>2013-12-02T20:51:11+01:00</updated>
+  <updated>2013-12-02T21:22:30+01:00</updated>
   <id>http://PlugIN73.github.io/</id>
   <author>
     <name><![CDATA[plugin73]]></name>
@@ -36,6 +36,65 @@
 
 <p>Я постарался не спойлерить и если кому интересно &ndash; книгу можно заказать
 на <a href="http://www.ozon.ru/context/detail/id/18820179/">озоне</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Calendar Driven Development [заметки]]]></title>
+    <link href="http://PlugIN73.github.io/blog/2013/10/16/otzyv-o-calendar-driven-development/"/>
+    <updated>2013-10-16T19:43:00+02:00</updated>
+    <id>http://PlugIN73.github.io/blog/2013/10/16/otzyv-o-calendar-driven-development</id>
+    <content type="html"><![CDATA[<p>По мотивам <a href="http://habrahabr.ru/post/195942/">статьи на хабре</a></p>
+
+<p><strong><em>5 дней</em></strong>
+Офигеть! Круто!</p>
+
+<p>Начинаем спор ;) Цель &ndash; 15 дней.</p>
+
+<p><strong><em>10 дней</em></strong>
+Ааааа! Закрасить квадратик и спать!</p>
+
+<p><strong><em>15 дней</em></strong>
+Неожиданно понимаю, что люблю зеленые квадратики.</p>
+
+<p>Новая цель &ndash; 40 дней. Миссия не выполнима?</p>
+
+<p><strong><em>26 дней</em></strong>
+День по гитхабу начинается в 11 МСК &ndash; можно ведь и с утра закоммитить? А
+сейчас бухаааать :)</p>
+
+<p><strong><em>27 день</em></strong>
+Вчерашний вечер дает о себе знать. Хакатон в андеве. Вспоминаю о коммите
+ровно в 11:05. Паника, дикий ужас, ощущение пустоты&hellip; все тлен.</p>
+
+<p>Рекорд &ndash; 26 дней непрерывных коммитов в opensource.
+Начинаем заново.</p>
+
+<p><strong><em>3 дня</em></strong>
+Окружающие меня не понимают. А я тупо знимаюсь интересным мне делом,
+играю, качаю англ и выполняю маленькие задачи, до которых руки никогда
+не дойдут&hellip;</p>
+
+<p><strong><em>14 дней</em></strong>
+Проекты с хакатнов и по учебе &ndash; отличный повод закрасить этот чертов
+квадрат.</p>
+
+<p><strong><em>14 дней</em></strong>
+Темно зеленый квадрат это не вам не светлый ;)</p>
+
+<p><strong><em>15 дней</em></strong>
+Есть же люди, у которых по 200 непрерывных коммитов&hellip;</p>
+
+<p><strong><em>22 дня</em></strong>
+Закоммитить из автобуса в Самаре &ndash; done.</p>
+
+<p><strong><em>29 дней</em></strong>
+Рекорд побит, но это очень тяжело.</p>
+
+<p><strong><em>31 день</em></strong>
+Коммит в блог на гитхабе дает сразу 2 коммита &ndash; в gh-pages и потом
+коммит кода деплоя. Оба
+считаются. Сделать темнозеленый квадрат становится проще&hellip;</p>
 ]]></content>
   </entry>
   
