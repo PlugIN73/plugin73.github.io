@@ -7,6 +7,7 @@ categories: notes cdd
 ---
 
 По мотивам [статьи на хабре](http://habrahabr.ru/post/195942/)
+<!--more-->
 
 ***5 дней***
 Офигеть! Круто!
