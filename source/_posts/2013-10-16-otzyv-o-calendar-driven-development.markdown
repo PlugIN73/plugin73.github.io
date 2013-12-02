@@ -3,9 +3,10 @@ layout: post
 title: "Calendar Driven Development [заметки]"
 date: 2013-10-16 19:43
 comments: true
-categories: 
-published: false
+categories: notes cdd
 ---
+
+По мотивам [статьи на хабре](http://habrahabr.ru/post/195942/)
 
 ***5 дней***
 Офигеть! Круто!
