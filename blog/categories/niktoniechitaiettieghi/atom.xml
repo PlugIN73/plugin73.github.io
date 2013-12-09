@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: top-secret | Alexander Vagin]]></title>
-  <link href="http://PlugIN73.github.io/blog/categories/top-secret/atom.xml" rel="self"/>
+  <title><![CDATA[Category: никтонечитаеттеги | Alexander Vagin]]></title>
+  <link href="http://PlugIN73.github.io/blog/categories/niktoniechitaiettieghi/atom.xml" rel="self"/>
   <link href="http://PlugIN73.github.io/"/>
   <updated>2013-12-09T05:50:42+01:00</updated>
   <id>http://PlugIN73.github.io/</id>
@@ -64,20 +64,6 @@
 <p>Уже больше 60 дней (с перерывом в одни сутки) я фигачу в open source.
 Переводить сайт начинает надоедать, хочется уже чего-то большего. Но
 если вы не знаете с чего начать, но очень хочется, то прошу <a href="https://github.com/zzet/RestApiTutorial.ru">сюда</a> &ndash; будем рады любой помощи! :)</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Вступление]]></title>
-    <link href="http://PlugIN73.github.io/blog/2013/09/17/vstuplieniie/"/>
-    <updated>2013-09-17T19:29:00+02:00</updated>
-    <id>http://PlugIN73.github.io/blog/2013/09/17/vstuplieniie</id>
-    <content type="html"><![CDATA[<p>Первый мой блог и сразу по хардкору jekyll. :)
- <!--more--></p>
-
-<p>Пришло время, когда я хочу и могу о чем-то написать. Тяжело пересилить свои страхи, но я это сделаю!</p>
-
-<p>Хочу тут освещать интересные моменты из своего опыта и вести заметки по прокачке. You are welcome!</p>
 ]]></content>
   </entry>
   
