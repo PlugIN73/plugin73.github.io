@@ -4,7 +4,7 @@
   <title><![CDATA[Category: open-source | Alexander Vagin]]></title>
   <link href="http://PlugIN73.github.io/blog/categories/open-source/atom.xml" rel="self"/>
   <link href="http://PlugIN73.github.io/"/>
-  <updated>2013-12-09T08:25:20+01:00</updated>
+  <updated>2013-12-09T08:29:24+01:00</updated>
   <id>http://PlugIN73.github.io/</id>
   <author>
     <name><![CDATA[plugin73]]></name>
@@ -38,8 +38,8 @@
 
 <p>Но все изменилось, когда <a href="https://twitter.com/mokevnin">@mokevnin</a>
 пошутил: &ldquo;На railsclub поедут те, у кого будет больше pull requests за
-лето.&rdquo; Я включил наивняшку и поверил. За лето зафигачил около 5 pr и
-меня не взяли на railsclub :D Зато я понял, что фигачить в open source
+лето.&rdquo; Я включил наивняшку и поверил. За лето я отправил около 5 pr и
+меня не взяли на railsclub :D Зато я понял, что участвовать в open source
 совсем не больно и люди рады любой помощи! Абсолютно любой! &ldquo;Поправил
 документацию, нашел баг, убрал warning? Да да! Супер!&rdquo;
 Любой проект отнимает время у его создателя, и тяжело его распылять на всякие мелочи,
