@@ -4,7 +4,6 @@ title: "Всегда есть 5 минут"
 date: 2013-12-08 18:25
 comments: true
 categories: top-secret open-source новичкам зачмырят никтонечитаеттеги 
-published: false
 ---
 
 Мне всегда хотелось чем-то помочь open-source проектам. Что меня
