@@ -3,7 +3,7 @@ layout: post
 title: "Procrastinate like a pro"
 date: 2016-02-22 22:50
 comments: true
-categories:
+categories: [procrastination]
 ---
 
 За год наткнулся на разные штуки по самоконтролю.
