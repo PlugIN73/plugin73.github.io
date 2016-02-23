@@ -4,7 +4,7 @@
   <title><![CDATA[Alexander Vagin]]></title>
   <link href="http://PlugIN73.github.io/atom.xml" rel="self"/>
   <link href="http://PlugIN73.github.io/"/>
-  <updated>2013-12-11T21:02:51+01:00</updated>
+  <updated>2016-02-23T15:33:15+03:00</updated>
   <id>http://PlugIN73.github.io/</id>
   <author>
     <name><![CDATA[plugin73]]></name>
@@ -14,9 +14,64 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Procrastinate like a pro]]></title>
+    <link href="http://PlugIN73.github.io/blog/2016/02/22/procrastinate-like-a-pro/"/>
+    <updated>2016-02-22T22:50:00+03:00</updated>
+    <id>http://PlugIN73.github.io/blog/2016/02/22/procrastinate-like-a-pro</id>
+    <content type="html"><![CDATA[<p>За год наткнулся на разные штуки по самоконтролю.</p>
+
+<!--more-->
+
+
+<ul>
+<li><p><a href="https://chrome.google.com/webstore/detail/switcheroo-redirector/cnmciclhnghalnpfhhleggldniplelbg?hl=en">Switcheroo Redirector</a>
+Плагин для браузера, позволяет настроить домен &ndash;> домен редиректы. Изначально, ставил для тестирования по работе, но оказалось,
+что очень удобно блокировать соц. сети (и любые сайты, где можно проводить время неделями). При этом, их в один клик легко разблокировать и найти нужную информацию.
+Для блокировки, просто не указываю, на какой домен редиректить. Когда захожу на заблокированный сайт, даю себе пинка и довольный ухожу оттуда.</p></li>
+<li><p><a href="http://www.smartreminder.ru/">Smart Reminder</a>
+Плагин для браузера, устанавливает ежедневный лимит на посещение Вконтакте и Фейсбук по 5 минут. Этого достаточно, чтобы просмотреть новости, оставить пару комментариев и ответить на сообщения.
+Плагин написали ребята из <a href="www.smartreading.ru">smart reading</a> &ndash; краткие саммари полезных книг. За время пользования аддоном, я провел в вк и фб 400 минут, что равносильно 13 прочитанным саммари книг.
+Кстати, если 3 дня проводить в этих сетях не более 5 минут в день, то в подарок дают бесплатный месяц на smartreading &ndash; только ради этого стоит попробовать, сервис то, что надо!</p></li>
+<li><p>Google Calendar
+Внезапно, лучший органайзер. Есть одна полезная практика &ndash; раз в неделю планирую задачи на всю неделю. В планах самое разное &ndash; от прочтения книг, до прикрутить таки ту полочку, а то год обещаю :D
+Синхронизация с телефоном, постоянно диктует &ndash; пора приступать к следующей задаче. Пожалуй, самые продуктивные недели &ndash; когда я полностью живу по такому календарю. (вплоть до напоминания, что пора идти спать или прогуляться до работы)
+Конечно, это тяжело совместисть с неожиданными делами и прочими родственниками &ndash; дольше месяца подряд я так не выдерживал, система идет в раснос. Но через какое-то время можно опять в ней возвращаться и сворачивать горы :)</p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Rework. Бизнес без предрассудков]]></title>
+    <link href="http://PlugIN73.github.io/blog/2014/08/12/rework/"/>
+    <updated>2014-08-12T18:44:00+03:00</updated>
+    <id>http://PlugIN73.github.io/blog/2014/08/12/rework</id>
+    <content type="html"><![CDATA[<p>Долго не решался купить книгу, потому что сомневался в ее полезности.
+Да, ее авторы знаменитые люди, которые пришли к успеху. Да, она продается громадными тиражами. Да, наконец, издательство в России шикарное!
+Так почему я не жалею, что наконец-то приобрел и прочитал ee?</p>
+
+<!-- more -->
+
+
+<p>Во всех рецензиях написано, что книга полезна и тем, кто уже занимается бизнесом, так и тем, кто еще думает о нем. На сколько я могу судить &ndash; это чистая правда. Книга ведет нас с подготовки до культуры своего бизнеса.
+Лично мне запали в душу самые первые главы. Теперь, я понимаю, почему учиться на своих ошибках глупо, чем плохи трудоголики, а совещания токсичны. :)</p>
+
+<p>Перед печатью книгу урезали вдвое! Пожалуй, сейчас в ней нет ничего лишнего! Маленькие главы, каждая из них &ndash; инструкция к действию.
+После прочтения, некоторые моменты встали передо мной в новом свете. Например, менеджер. Я представлял себе его работу как волеизъявление руководства и контроль за действиями остальных.
+Но оказывается лучше, когда менеджер сам предлагает какие-то идеи или решения, тем самым развивая проект.</p>
+
+<p>И вообще, отсутствие времени не отговорка, чеши там, где зудит и наркоторговцы все правильно понимают :)</p>
+
+<p>P.S. оборотная сторона обложки не врет &ndash; книга читается на одном дыхании примерно за 3-4 часа.</p>
+
+<p><a href="http://www.ozon.ru/context/detail/id/28158505/">Rework</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Всегда есть 5 минут]]></title>
     <link href="http://PlugIN73.github.io/blog/2013/12/08/vsieghda-iest-5-minut/"/>
-    <updated>2013-12-08T18:25:00+01:00</updated>
+    <updated>2013-12-08T18:25:00+03:00</updated>
     <id>http://PlugIN73.github.io/blog/2013/12/08/vsieghda-iest-5-minut</id>
     <content type="html"><![CDATA[<p>Мне всегда хотелось чем-то помочь open-source проектам. Что меня
 останавливало? Да все как всегда &ndash; я ничего не знаю/мне нечего
@@ -69,7 +124,7 @@
   <entry>
     <title type="html"><![CDATA[Цель. Процесс непрерывного улучшения [отзыв]]]></title>
     <link href="http://PlugIN73.github.io/blog/2013/12/01/tsiel-protsiess-nieprieryvnogho-uluchshieniia-otzyv/"/>
-    <updated>2013-12-01T11:18:00+01:00</updated>
+    <updated>2013-12-01T11:18:00+03:00</updated>
     <id>http://PlugIN73.github.io/blog/2013/12/01/tsiel-protsiess-nieprieryvnogho-uluchshieniia-otzyv</id>
     <content type="html"><![CDATA[<p>Увлекательнейший бизнес-роман, познакомивший Америку с теорией
 ограничений.
@@ -95,7 +150,7 @@
   <entry>
     <title type="html"><![CDATA[Calendar Driven Development [заметки]]]></title>
     <link href="http://PlugIN73.github.io/blog/2013/10/16/otzyv-o-calendar-driven-development/"/>
-    <updated>2013-10-16T19:43:00+02:00</updated>
+    <updated>2013-10-16T19:43:00+03:00</updated>
     <id>http://PlugIN73.github.io/blog/2013/10/16/otzyv-o-calendar-driven-development</id>
     <content type="html"><![CDATA[<p>По мотивам <a href="http://habrahabr.ru/post/195942/">статьи на хабре</a></p>
 
@@ -157,7 +212,7 @@
   <entry>
     <title type="html"><![CDATA[Timezone vs Ruby &amp;&amp; Rails]]></title>
     <link href="http://PlugIN73.github.io/blog/2013/09/18/timezone-vs-ruby-and-and-rails/"/>
-    <updated>2013-09-18T07:01:00+02:00</updated>
+    <updated>2013-09-18T07:01:00+03:00</updated>
     <id>http://PlugIN73.github.io/blog/2013/09/18/timezone-vs-ruby-and-and-rails</id>
     <content type="html"><![CDATA[<p>Подводные камни и true way :)
  <!--more--></p>
@@ -231,7 +286,7 @@ end
   <entry>
     <title type="html"><![CDATA[Вступление]]></title>
     <link href="http://PlugIN73.github.io/blog/2013/09/17/vstuplieniie/"/>
-    <updated>2013-09-17T19:29:00+02:00</updated>
+    <updated>2013-09-17T19:29:00+03:00</updated>
     <id>http://PlugIN73.github.io/blog/2013/09/17/vstuplieniie</id>
     <content type="html"><![CDATA[<p>Первый мой блог и сразу по хардкору jekyll. :)
  <!--more--></p>
