@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Timezone vs Ruby &amp;&amp; Rails - Alexander Vagin</title>
+  <meta name="author" content="plugin73">
+
+  
+  <meta name="description" content="Подводные камни и true way :) При использовании класса Time в ruby используется серверное время, как точка отсчета времени. $ date
+Sat Sep 21 16:49: &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://PlugIN73.github.io/blog/2013/09/18/timezone-vs-ruby-and-and-rails">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Alexander Vagin" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-44096164-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+  
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+  (function (d, w, c) {
+   (w[c] = w[c] || []).push(function() {
+     try {
+     w.yaCounter23252932 = new Ya.Metrika({id:23252932,
+       webvisor:true,
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true});
+     } catch(e) { }
+     });
+
+   var n = d.getElementsByTagName("script")[0],
+   s = d.createElement("script"),
+   f = function () { n.parentNode.insertBefore(s, n); };
+   s.type = "text/javascript";
+   s.async = true;
+   s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+   if (w.opera == "[object Opera]") {
+   d.addEventListener("DOMContentLoaded", f, false);
+   } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/20581546" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+</hgroup>
+
+</header>
+  <!-- <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:PlugIN73.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav> -->
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Timezone vs Ruby &amp;&amp; Rails</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-18T07:01:00+02:00" pubdate data-updated="true">Sep 18<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Подводные камни и true way :)
+ <!--more--></p>
+
+<p>При использовании класса <a href="http://ruby-doc.org/core-2.0.0/Time.html" title="Time в ruby 2.0">Time</a> в ruby используется серверное время, как точка отсчета времени.</p>
+
+<pre><code>$ date
+Sat Sep 21 16:49:56 CEST 2013
+$ irb
+2.0.0-p247 :001 &gt; Time.now
+=&gt; 2013-09-21 16:49:59 +0200
+</code></pre>
+
+<p>Чем это может быть опасно?</p>
+
+<p>Допустим вы разрабатываете программу, которая печатает время прилета самолетов. В вашем часовом поясе сейчас 17:00, а на компьютере установлено правильное время.</p>
+
+<pre><code>time = Time.new(2013, 09, 21, 16, 49, 59)
+
+puts "#{time} - #{plane.name} now #{message}"
+
+2.0.0-p247 :001 &gt; plane_message (plane, "landed")
+=&gt; 2013-09-21 16:49:59 +0100 - Airbus 22 now landed
+</code></pre>
+
+<p>С этой программой все хорошо, пока мы исполняем ее у себя на сервере. Стоит нам ее вылить, например, на продакшен, который находится в другом часовом поясе или случайно не правильно настроен, как мы получим странный баг &ndash; время будет отличным от ожидаемого. И все потому, что ruby взяло за точку отсчета таймзону сервера.</p>
+
+<p>Получить ожидаемый результат довольно просто &ndash; нужно просто передавать нужное смещение в конструктор:</p>
+
+<pre><code>time = Time.new(2013, 09, 21, 16, 49, 59, "+02:00")
+</code></pre>
+
+<p>Над полученным объектом можно выполнять различные преобразования и все они будут представлены в указанной таймзоне.</p>
+
+<p>Согласитесь, что каждый раз помнить о таймзоне рано или поздно надоест! :)</p>
+
+<p>Например, в фреймворке Ruby on Rails эта проблема решается конфигурируемой таймзоной.</p>
+
+<pre><code>#config/application.rb
+config.time_zone = 'Europe/Moscow'
+</code></pre>
+
+<p>В фреймворке переопределен класс Time (<a href="http://api.rubyonrails.org/classes/Time.html" title="Time в rails">rails Time</a>) и умеет работать с нашей конфигурируемой таймзоной!
+Теперь, чтобы всегда использовать нужный часовой пояс, не нужно передавать смещение в конструктор класса Time. Просто вызывайте метод zone():</p>
+
+<pre><code>2.0.0-p247 :001 &gt; Time.now()
+=&gt; 2013-09-21 17:42:33 +0200
+2.0.0-p247 :002 &gt; Time.zone.now()
+=&gt; Sat, 21 Sep 2013 19:42:38 MSK +04:00
+</code></pre>
+
+<p>Ну и если очень хочется сменить точку отсчета времени, например парсить время относительно Новосибирска, находясь в Московской зоне, можно либо вручную переписать таймзону (и не забыть ее вернуть обратно), либо использовать возможности rails:</p>
+
+<pre><code>Time.use_zone('Novosibirsk') do
+  Time.zone.now
+end
+</code></pre>
+
+<p>Что хотелось бы отметить &ndash; рельсовый ActiveRecord умеет работать с временными зонами и использует зону из application.rb. В базу данных, по умолчанию, сохраняется время в UTC, т.е. переводится в +0. Для этого используют метод to_s(:db). В большинстве случаев вызывать его нет необходимости, так как rails сами его вызовут.</p>
+
+<p>Исходя из того, что рельсы сохраняют время в UTC, то и из базы они хотят получить время в UTC. А это значит, что хранить таймзону в бд нам не нужно.</p>
+
+<p><strong>UPD 1</strong>:<br>
+ В качестве альтернативы к Time.zone.now можно использовать <a href="https://github.com/rails/rails/blob/master/activesupport/lib/active_support/core_ext/time/calculations.rb#L28">Time.current</a>.
+Его результат &ndash; вызов Time.zone.now, но только при установленной таймзоне в конфигурационном файле (или напрямую через Time.zone), иначе
+ возвращает Time.now. На мой взгляд, поведение этого метода в некоторой степени неявно &ndash; необходимо понимать, какой результат будет в
+ конкретном случае использования.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">plugin73</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-18T07:01:00+02:00" pubdate data-updated="true">Sep 18<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/rails/'>rails</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a>, <a class='category' href='/blog/categories/ruby-on-rails/'>ruby_on_rails</a>, <a class='category' href='/blog/categories/time/'>time</a>, <a class='category' href='/blog/categories/timezone/'>timezone</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://PlugIN73.github.io/blog/2013/09/18/timezone-vs-ruby-and-and-rails/" data-via="" data-counturl="http://PlugIN73.github.io/blog/2013/09/18/timezone-vs-ruby-and-and-rails/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/09/17/vstuplieniie/" title="Previous Post: Вступление">&laquo; Вступление</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/10/16/otzyv-o-calendar-driven-development/" title="Next Post: Calendar Driven Development [заметки]">Calendar Driven Development [заметки] &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <ul id="recent_posts">
+      <li class="post">
+      <a href="http://PlugIN73.github.io" alt="Home"><img src="/images/Home.png"></a>
+      <a href="http://PlugIN73.github.io/archives/" alt="Archives"><img src="/images/Calendar.png"></a>
+      <a href="mailto:" alt="E-Mail"><img src="/images/Envelope.png"></a>
+      <a href="http://PlugIN73.github.io/atom.xml" alt="subscribe feed"><img src="/images/rss_big.png"></a>
+      </li>
+  </ul>
+</section>
+<section>
+
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/12/08/vsieghda-iest-5-minut/">Всегда есть 5 минут</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/12/01/tsiel-protsiess-nieprieryvnogho-uluchshieniia-otzyv/">Цель. Процесс непрерывного улучшения [отзыв]</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/16/otzyv-o-calendar-driven-development/">Calendar Driven Development [заметки]</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/18/timezone-vs-ruby-and-and-rails/">Timezone vs Ruby &amp;&amp; Rails</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/17/vstuplieniie/">Вступление</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/PlugIN73">@PlugIN73</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'PlugIN73',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - plugin73 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'plugin73github';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://PlugIN73.github.io/blog/2013/09/18/timezone-vs-ruby-and-and-rails/';
+        var disqus_url = 'http://PlugIN73.github.io/blog/2013/09/18/timezone-vs-ruby-and-and-rails/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

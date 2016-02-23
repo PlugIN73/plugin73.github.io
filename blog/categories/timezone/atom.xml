@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: timezone | Alexander Vagin]]></title>
+  <link href="http://PlugIN73.github.io/blog/categories/timezone/atom.xml" rel="self"/>
+  <link href="http://PlugIN73.github.io/"/>
+  <updated>2013-12-11T21:02:51+01:00</updated>
+  <id>http://PlugIN73.github.io/</id>
+  <author>
+    <name><![CDATA[plugin73]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Timezone vs Ruby &amp;&amp; Rails]]></title>
+    <link href="http://PlugIN73.github.io/blog/2013/09/18/timezone-vs-ruby-and-and-rails/"/>
+    <updated>2013-09-18T07:01:00+02:00</updated>
+    <id>http://PlugIN73.github.io/blog/2013/09/18/timezone-vs-ruby-and-and-rails</id>
+    <content type="html"><![CDATA[<p>Подводные камни и true way :)
+ <!--more--></p>
+
+<p>При использовании класса <a href="http://ruby-doc.org/core-2.0.0/Time.html" title="Time в ruby 2.0">Time</a> в ruby используется серверное время, как точка отсчета времени.</p>
+
+<pre><code>$ date
+Sat Sep 21 16:49:56 CEST 2013
+$ irb
+2.0.0-p247 :001 &gt; Time.now
+=&gt; 2013-09-21 16:49:59 +0200
+</code></pre>
+
+<p>Чем это может быть опасно?</p>
+
+<p>Допустим вы разрабатываете программу, которая печатает время прилета самолетов. В вашем часовом поясе сейчас 17:00, а на компьютере установлено правильное время.</p>
+
+<pre><code>time = Time.new(2013, 09, 21, 16, 49, 59)
+
+puts "#{time} - #{plane.name} now #{message}"
+
+2.0.0-p247 :001 &gt; plane_message (plane, "landed")
+=&gt; 2013-09-21 16:49:59 +0100 - Airbus 22 now landed
+</code></pre>
+
+<p>С этой программой все хорошо, пока мы исполняем ее у себя на сервере. Стоит нам ее вылить, например, на продакшен, который находится в другом часовом поясе или случайно не правильно настроен, как мы получим странный баг &ndash; время будет отличным от ожидаемого. И все потому, что ruby взяло за точку отсчета таймзону сервера.</p>
+
+<p>Получить ожидаемый результат довольно просто &ndash; нужно просто передавать нужное смещение в конструктор:</p>
+
+<pre><code>time = Time.new(2013, 09, 21, 16, 49, 59, "+02:00")
+</code></pre>
+
+<p>Над полученным объектом можно выполнять различные преобразования и все они будут представлены в указанной таймзоне.</p>
+
+<p>Согласитесь, что каждый раз помнить о таймзоне рано или поздно надоест! :)</p>
+
+<p>Например, в фреймворке Ruby on Rails эта проблема решается конфигурируемой таймзоной.</p>
+
+<pre><code>#config/application.rb
+config.time_zone = 'Europe/Moscow'
+</code></pre>
+
+<p>В фреймворке переопределен класс Time (<a href="http://api.rubyonrails.org/classes/Time.html" title="Time в rails">rails Time</a>) и умеет работать с нашей конфигурируемой таймзоной!
+Теперь, чтобы всегда использовать нужный часовой пояс, не нужно передавать смещение в конструктор класса Time. Просто вызывайте метод zone():</p>
+
+<pre><code>2.0.0-p247 :001 &gt; Time.now()
+=&gt; 2013-09-21 17:42:33 +0200
+2.0.0-p247 :002 &gt; Time.zone.now()
+=&gt; Sat, 21 Sep 2013 19:42:38 MSK +04:00
+</code></pre>
+
+<p>Ну и если очень хочется сменить точку отсчета времени, например парсить время относительно Новосибирска, находясь в Московской зоне, можно либо вручную переписать таймзону (и не забыть ее вернуть обратно), либо использовать возможности rails:</p>
+
+<pre><code>Time.use_zone('Novosibirsk') do
+  Time.zone.now
+end
+</code></pre>
+
+<p>Что хотелось бы отметить &ndash; рельсовый ActiveRecord умеет работать с временными зонами и использует зону из application.rb. В базу данных, по умолчанию, сохраняется время в UTC, т.е. переводится в +0. Для этого используют метод to_s(:db). В большинстве случаев вызывать его нет необходимости, так как rails сами его вызовут.</p>
+
+<p>Исходя из того, что рельсы сохраняют время в UTC, то и из базы они хотят получить время в UTC. А это значит, что хранить таймзону в бд нам не нужно.</p>
+
+<p><strong>UPD 1</strong>:<br>
+ В качестве альтернативы к Time.zone.now можно использовать <a href="https://github.com/rails/rails/blob/master/activesupport/lib/active_support/core_ext/time/calculations.rb#L28">Time.current</a>.
+Его результат &ndash; вызов Time.zone.now, но только при установленной таймзоне в конфигурационном файле (или напрямую через Time.zone), иначе
+ возвращает Time.now. На мой взгляд, поведение этого метода в некоторой степени неявно &ndash; необходимо понимать, какой результат будет в
+ конкретном случае использования.</p>
+]]></content>
+  </entry>
+  
+</feed>
